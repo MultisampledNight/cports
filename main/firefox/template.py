@@ -176,7 +176,7 @@ def configure(self):
     if self.has_lto():
         conf_opts += ["--enable-lto=cross"]
 
-    _use_pgo = self.has_lto()
+    _use_pgo = self.has_lto() and False
 
     # aarch64: gets stuck busy-looping in profiling pass in ff140
     # ppc64le: takes long to link and generates a broken binary
