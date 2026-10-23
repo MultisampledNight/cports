@@ -1,7 +1,6 @@
 pkgname = "containerd"
-pkgver = "2.1.4"
-pkgrel = 10
-_rootless_ver = "2.1.3"
+pkgver = "2.4.2"
+pkgrel = 0
 build_style = "makefile"
 make_build_args = [
     # invokes go, so slower in parallel since races for cache and overloads threads
@@ -42,10 +41,10 @@ license = "Apache-2.0"
 url = "https://github.com/containerd/containerd"
 source = [
     f"{url}/archive/v{pkgver}.tar.gz",
-    f"!https://raw.githubusercontent.com/containerd/nerdctl/refs/tags/v{_rootless_ver}/extras/rootless/containerd-rootless.sh>containerd-rootless-{pkgver}",
+    f"!https://raw.githubusercontent.com/containerd/nerdctl/refs/tags/v{pkgver}/extras/rootless/containerd-rootless.sh>containerd-rootless-{pkgver}",
 ]
 sha256 = [
-    "8c409f8a0ba6015cb365a95e039a0fc9f3663c891a26eb52c0fb8cd291ba75d4",
+    "02cbbecd0ef78a521d124afa791b843ba5458ef206e1f7f017999ff45c80c0b4",
     "1f8101ce7680ce4533ced18b4e3e39bd300c08210c336d30f6969c8cb1727a7c",
 ]
 # can't run tests inside namespaces
