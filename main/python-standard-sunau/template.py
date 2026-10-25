@@ -1,0 +1,12 @@
+pkgname = "python-standard-sunau"
+pkgver = "3.13.0"
+pkgrel = 0
+build_style = "python_pep517"
+hostmakedepends = ["python-build", "python-installer", "python-setuptools"]
+checkdepends = ["python-pytest"]
+depends = ["python-audioop-lts"]
+pkgdesc = "Parse Sun and NeXT audio files"
+license = "PSF-2.0"
+url = "https://github.com/youknowone/python-deadlib"
+source = f"{url}/releases/download/v{pkgver}/standard_sunau-{pkgver}.tar.gz"
+sha256 = "b319a1ac95a09a2378a8442f403c66f4fd4b36616d6df6ae82b8e536ee790908"
